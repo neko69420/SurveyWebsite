@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Subject you have completed Studying
+            </h1>
+            <p id="description">
+                Hey Guys, can you tell me what subjects you have completed studying.
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="Email" id="email-label">Email</label>
+                <input type="email" id="email" name="Email" class="form-control" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class="clue">(Optional)</span></label>
+                <input type="number" id="number" class="form-control" name="age" min="10" max="99" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <p>Which option fits you the best?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="completed">Completed All</option>
+                    <option value="ss">SS Part Completed</option>
+                    <option value="ssh">SSH Part Completed</option>
+                    <option value="pass">Pass Hune Jati Completed</option>
+                    <option value="fail">Fail Ho Yar Sure</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Chemistry is easy or not</p>
+                <label>
+                    <input type="radio" class="input-radio" value="definitely" name="user-recommend" checked>Definitely
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" value="idk" name="user-recommend">Idk
+                </label>
+                <label>
+                    <input type="radio" class="input-radio" value="maybe" name="user-recommend">Maybe
+
+                </label>
+
+                <label><input name="user-recommend" value="no" type="radio" class="input-radio" />Nope</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What is the easiest part?
+                </p>
+                <select name="mostlike" id="most-like" class="form-control" required>
+                <option disabled selected value>Choose an option.</option>
+                <option value="ece">Electro, catalyst and Environmental</option>
+                <option value="polymer">Polymers</option>
+                <option value="lube">Lube Paints and Explosive</option>
+                <option value="numerical">Others left</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    What are you studying right now?
+                    <span>(Check all the apply)</span>
+                </p>
+                <label>
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="electro">
+                    Electro-Chemistry and Buffer
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="catalyst">
+                    Catalyst
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="environmental">
+                    Environmental
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="Explosive">
+                    Explosive
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Submit
+                </button>
+              </div>
+        </form>
+    </div>
+</body>
+
+</html>
